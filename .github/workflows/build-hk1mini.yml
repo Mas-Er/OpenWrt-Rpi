@@ -18,7 +18,7 @@ on:
 env:
   CONFIG_FILE: config/rockchip/armv7.config
   SOURCE_URL: https://github.com/Mas-Er/immortalwrt
-  SOURCE_BRANCH: master
+  SOURCE_BRANCH: armv7
   DIY_SH: scripts/custom.sh
   TOOLCHAIN_TAG: toolchain
   CLASH_BINARY_PLATFORM: armv7
