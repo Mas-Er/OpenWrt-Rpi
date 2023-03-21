@@ -313,8 +313,8 @@ jobs:
           make buildinfo
           make diffconfig buildversion feedsversion
           make target/compile -j$(nproc) IGNORE_ERRORS="m n" BUILD_LOG=1 || \
-          yes n | make target/compile -j1 V=s IGNORE_ERRORS=1
-          make package/compile -j$(nproc) IGNORE_ERRORS=1 || make package/compile -j1 V=s IGNORE_ERRORS=1
+          yes n | make target/compile -j2 V=s IGNORE_ERRORS=1
+          make package/compile -j$(nproc) IGNORE_ERRORS=1 || make package/compile -j2 V=s IGNORE_ERRORS=1
           make package/index
 
       - name: Generate Firmware
